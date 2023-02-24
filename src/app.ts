@@ -2,7 +2,7 @@ import { Client, GatewayIntentBits } from "discord.js";
 import dotenv from 'dotenv';
 dotenv.config();
 
-const botToken = process.env.BOT_TOKEN;
+const userToken = process.env.USER_TOKEN;
 const userId = process.env.USER_ID;
 const channelId = process.env.CHANNEL_ID;
 
@@ -18,7 +18,7 @@ async function main() {
   });
 
 // Replace <YOUR_TOKEN> with your bot token
-  const str = await client.login(botToken);
+  const str = await client.login(userToken);
   console.log(str);
 
 // Replace <MESSAGE_CONTENT> with the content of the message you want to send
