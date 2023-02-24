@@ -56,7 +56,8 @@ app.get('/callback', async (req, res) => {
       redirect_uri: REDIRECT_URI,
     };
     const tokenResponse = await oauth2Client.getToken(tokenParams);
-    console.log("User's token:", tokenResponse.token.access_token);
+    console.log("User's token:");
+    console.log(tokenResponse.token);
     // Use the access token to make API requests on behalf of the user
     const userResponse = await fetch('https://discord.com/api/users/@me', {
       headers: {
