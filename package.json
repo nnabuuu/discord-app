@@ -1,0 +1,26 @@
+{
+  "name": "midjourney-discord-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^18.11.19",
+    "@types/node-fetch": "^2.6.2",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.2",
+    "openai": "^3.1.0"
+  }
+}
